@@ -3,8 +3,8 @@ extended = true
 min = "0.128.0"
 max = "0.159.2"
 
-[[imports]]
-path = "github.com/zeon-studio/hugoplate"
+# [[imports]]
+# path = "github.com/zeon-studio/hugoplate"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/search"

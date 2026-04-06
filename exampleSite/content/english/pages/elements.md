@@ -7,7 +7,6 @@ description: "This is meta description"
 # save as draft
 draft: false
 ---
-
 {{< toc >}}
 
 Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
@@ -24,7 +23,7 @@ Here is an example of headings. You can use this heading by the following markdo
 
 ###### Heading 6
 
-<hr>
+<hr />
 
 ### Emphasis
 
@@ -36,35 +35,35 @@ The combined emphasis with **asterisks and _underscores_**.
 
 Strike through uses two tildes. ~~Scratch this.~~
 
-<hr>
+<hr />
 
 ### Button
 
 {{< button label="Button" link="/" style="solid" >}}
 
-<hr>
+<hr />
 
 ### Link
 
-[I'm an inline-style link](https://www.google.com)
+​[I'm an inline-style link](https://www.google.com)​
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+​[I'm an inline-style link with title](https://www.google.com)​
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+​[I'm a relative reference to a repository file](../blob/master/LICENSE)​
 
 URLs and URLs in angle brackets will automatically get turned into links.
-<http://www.example.com> or <http://www.example.com> and sometimes
+[http://www.example.com](http://www.example.com) or [http://www.example.com](http://www.example.com) and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
-<hr>
+<hr />
 
 ### Paragraph
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
 
-<hr>
+<hr />
 
 ### Ordered List
 
@@ -74,17 +73,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 4. List item
 5. List item
 
-<hr>
+<hr />
 
 ### Unordered List
 
-- List item
-- List item
-- List item
-- List item
-- List item
+* List item
+* List item
+* List item
+* List item
+* List item
 
-<hr>
+<hr />
 
 ### Notice
 
@@ -108,69 +107,57 @@ This is a simple info.
 This is a simple warning.
 {{< /notice >}}
 
-<hr>
+<hr />
 
 ### Tab
 
 {{< tabs >}}
 {{< tab "Tab 1" >}}
-
 #### Hey There, I am a tab
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 {{< /tab >}}
 
 {{< tab "Tab 2" >}}
-
 #### I wanna talk about the assassination attempt
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 {{< /tab >}}
 
 {{< tab "Tab 3" >}}
-
 #### We know you’re dealing in stolen ore
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
 {{< /tab >}}
 {{< /tabs >}}
 
-<hr>
+<hr />
 
 ### Accordions
 
 {{< accordion "Why should you need to do this?" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur
 {{< /accordion >}}
 
 {{< accordion "How can I adjust Horizontal centering" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur
 {{< /accordion >}}
 
 {{< accordion "Should you use Negative margin?" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur adipisicing elit.
+* Lorem ipsum dolor sit amet consectetur
 {{< /accordion >}}
 
-<hr>
+<hr />
 
 ### Code and Syntax Highlighting
 
@@ -186,7 +173,7 @@ s = "Python syntax highlighting"
 print s
 ```
 
-```c  { linenos=true }
+```c
 #include <stdio.h>
 
 int main(void)
@@ -205,48 +192,54 @@ flowchart TD
     B -- No ----> E[End]
 ```
 
-<hr>
+<hr />
 
 ### Blockquote
 
 > Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.
 
-<hr>
+<hr />
 
 ### Tables
 
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
+| Tables        | Are           | Cool   |
+| ------------- | ------------- | ------ |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      | centered      | \$12   |
+| zebra stripes | are neat      | \$1    |
 
-<hr>
+<hr />
 
 ### Image
 
 {{< image src="images/image-placeholder.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
-<hr>
+<hr />
 
 ### Gallery
 
 {{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
-<hr>
+<hr />
+
+```sql
+CREATE ABV
+```
 
 ### Slider
 
 {{< slider dir="images/gallery" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
-<hr>
+<hr />
 
 ### Youtube video
 
 {{< youtube ResipmZmpDU >}}
 
-<hr>
+<hr />
 
 ### Custom video
 
 {{< video src="https://www.w3schools.com/html/mov_bbb.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
+
+​

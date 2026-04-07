@@ -1,112 +1,150 @@
 #################### default parameters ############################
+# 網站的 Favicon (網站圖示)
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
+# 網站的亮色模式 Logo
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/logo.png"
+# 網站的暗色模式 Logo
 logo_darkmode = "images/logo-darkmode.png"
-# use `px` or `x` with logo_width, example: "100px".
-# Note: logo_width is not work with .svg file
+# Logo 的寬度，請使用 `px` 或 `x` (例如："100px")
+# 注意: logo_width 設定不適用於 .svg 檔案
 logo_width = "160px"
+# Logo 的高度
 logo_height = "32px"
-# if logo_webp set false, will not generate WEBP version of logo | default is true
+# 是否產生 WEBP 格式的 Logo，若設為 false 則不產生 | 預設為 true
 logo_webp = true
-# logo text will only show when logo is missing.
+# 當 Logo 圖片遺失時顯示的替代文字
 logo_text = "Hugoplate"
-# navbar fixed to top
+# 是否將導覽列固定在網頁頂部
 navbar_fixed = true
-# theme-mode
+# 是否啟用主題切換器 (亮色/暗色模式)
 theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
-# Main Sections
+# 預設的主題模式 # 可用選項有 [light/dark/system] (亮色/暗色/跟隨系統)
+theme_default = "system" 
+# 網站的主要內容區塊 (對應 content 下的目錄名稱)
 mainSections = ["blog"]
-# contact form action
+# 聯絡表單的發送位置
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
-# google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "" # example: G-XXXXXXXXXX
-google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
-# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
+# Google Tag Manager (GTM) 追蹤碼，參考: https://developers.google.com/tag-manager/
+google_tag_manager = "" # 範例: G-XXXXXXXXXX
+# Google AdSense 廣告碼
+google_adsense = ""     # 範例: ca-pub-xxxxxxxxxxxxxxxx
+# 在 <head> 中插入自訂的 JavaScript 腳本
+# 範例: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
-# copyright
+# 網頁底部的版權聲明
 copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
 
-# Preloader
+# 網頁預載動畫 (Preloader)
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
 [preloader]
+# 是否啟用預載動畫
 enable = false
-preloader = "" # use jpg, png, svg or gif format.
+# 預載動畫的圖片路徑，支援 jpg, png, svg 或 gif 格式
+preloader = "" 
 
-# Navigation button
+# 導覽列按鈕 (Navigation button)
 [navigation_button]
+# 是否啟用導覽列按鈕
 enable = true
+# 按鈕顯示文字
 label = "Github"
+# 按鈕連結網址
 link = "https://github.com/zeon-studio/hugoplate"
 
-# search
+# 網站搜尋功能 (search)
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]
+# 是否啟用搜尋功能
 enable = true
+# 搜尋介面的主要顏色
 primary_color = "#121212"
+# 包含在此搜尋範圍內的內容區塊
 include_sections = ["blog"]
+# 搜尋結果是否顯示文章圖片
 show_image = true
+# 搜尋結果是否顯示文章描述
 show_description = true
+# 搜尋結果是否顯示文章標籤 (Tags)
 show_tags = true
+# 搜尋結果是否顯示文章分類 (Categories)
 show_categories = true
 
-# announcement
+# 首頁上方橫幅公告 (announcement)
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
-enable = true
+# 是否啟用公告橫幅
+enable = false
+# 公告的有效天數 (預設 7 天隱藏)
 expire_days = 7
+# 公告內容 (支援 HTML)
 content = "<span class='text-center block'>♥️ Loving Hugoplate? <a class='underline' href='https://github.com/zeon-studio/hugoplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>"
 
-# seo meta data for OpenGraph / Twitter Card
+# SEO 與社群分享預覽設定 (OpenGraph / Twitter Card meta data)
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
+# 網站關鍵字
 keywords = ["Boilerplate", "Hugo"]
+# 網站描述
 description = "Hugo & Tailwindcss Starter"
+# 網站作者
 author = "zeon.studio"
+# X (Twitter) 帳號
 twitter = "zeon_studio"
+# 社群分享時顯示的預設圖片
 image = "images/og-image.png"
 
-
-# site verifications
+# 搜尋引擎網站擁有權驗證 (site verifications)
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
-google = ""   # Your verification code
-bing = ""     # Your verification code
-baidu = ""    # Your verification code
-facebook = "" # Your verification code
-mastodon = "" # Your verification code
+google = ""   # Google Search Console 驗證碼
+bing = ""     # Bing Webmaster Tools 驗證碼
+baidu = ""    # 百度站長平台驗證碼
+facebook = "" # Facebook 網域驗證碼
+mastodon = "" # Mastodon 驗證代碼
 
-# cookies
+# Cookie 同意聲明 (cookies)
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 [cookies]
+# 是否顯示 Cookie 聲明橫幅
 enable = false
+# 同意後 Cookie 的保留天數
 expire_days = 60
+# 聲明內容
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
+# 同意按鈕上的文字
 button = "I Accept"
 
-# diagrams
+# 圖表工具 (Mermaid JS)
 [mermaid]
+# Mermaid JS 腳本位址
 js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 
 ######################## sidebar widgets #########################
+# 側邊欄小工具 (widgets)
 [widgets]
+# 側邊欄顯示的小工具清單 (可用分類或標籤)
 sidebar = ["categories", "tags"]
 
-
-# google map
+# Google 地圖設定 (google map)
 [google_map]
+# 是否啟用 Google 地圖
 enable = false
+# Google Maps API 密鑰
 map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+# 地圖中心緯度
 map_latitude = "51.5223477"
+# 地圖中心經度
 map_longitude = "-0.1622023"
+# 地圖標記圖示路徑
 map_marker = "images/marker.png"
 
-
-# Subscription
+# 電子報訂閱 (Subscription)
 [subscription]
+# 是否啟用電子報訂閱功能
 enable = false
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+# Mailchimp 表單收集資料的發送位置 (請替換為自己的 URL)
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
+# Mailchimp 表單的 input 隱藏欄位名稱
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"

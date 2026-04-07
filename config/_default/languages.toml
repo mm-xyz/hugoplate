@@ -1,6 +1,13 @@
+################ Traditional Chinese (Taiwan) ##################
+[zh-hant]
+languageName = "繁體中文"
+languageCode = "zh-hant"
+contentDir = "content/zh-hant"
+weight = 1
+
 ################ English language ##################
 [en]
-languageName = "En"
+languageName = "English"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
